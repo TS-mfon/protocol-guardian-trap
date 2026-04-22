@@ -1,0 +1,10 @@
+{
+  "name": "protocol-guardian-trap",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "forge-std": "github:foundry-rs/forge-std#v1.8.1"
+  },
+  "dependencies": {
+    "drosera-contracts": "https://github.com/drosera-network/contracts"
+  }
+}
