@@ -4,6 +4,18 @@ A comprehensive Drosera Trap that protects an entire DeFi protocol by monitoring
 
 Built on the [Drosera Network](https://drosera.io) — a decentralized automation and incident response layer for blockchain protocols.
 
+## Two Variants
+
+This repo ships **two** trap contracts:
+
+1. **`ProtocolGuardianTrap.sol`** — original, addresses hardcoded in-file
+2. **`PluggableGuardianTrap.sol`** — *plug-and-play* version. All addresses and thresholds live in `src/configs/ProtocolConfig.sol`. Presets are provided for:
+   - **Aave V3 mainnet** (default — `configs/ProtocolConfig.sol`)
+   - **Uniswap V3 mainnet** (`configs/UniswapV3.sol`)
+   - **Compound V3 USDC** (`configs/CompoundV3.sol`)
+
+   To switch protocols: copy the desired preset over `ProtocolConfig.sol`, rebuild, redeploy. Zero code changes to the trap itself.
+
 ---
 
 ## Table of Contents
